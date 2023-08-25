@@ -3,6 +3,7 @@ import React from 'react';
 import Func from './Func';
 
 
+
 const Boton = ({ option, Img }) => { 
   const{Elegir_PC}=Func('');
   return (

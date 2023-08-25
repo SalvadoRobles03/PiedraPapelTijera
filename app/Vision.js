@@ -6,8 +6,8 @@ import Func from './Func';
 
 
 const Vision = () => {
-
-  const { opciones, Eleccion_Jugador, Eleccion_Bot, winner, Elegir_PC } = Func();
+  
+  const { opciones,Eleccion_Jugador,Eleccion_Bot,winner} = Func("");
 
     return (
       <View style={styles.container}>
