@@ -1,4 +1,7 @@
 import {useState}  from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+
+
 
 const Func = () =>{
   
@@ -41,10 +44,35 @@ const Func = () =>{
     
   };
 
+  const Boton = ({ option, Img }) => { 
+  
+    return (
+      <View>
+        <TouchableOpacity
+          style={styles.opcionButton}
+          onPress={() => Elegir_PC(option)}
+        >
+          <Image source={Img} style={{ width: 50, height: 50 }} />
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
   
   
-return{opciones,Eleccion_Jugador,Eleccion_Bot,winner,Elegir_PC}
+return{opciones,Eleccion_Jugador,Eleccion_Bot,winner,Elegir_PC,Boton}
 
 }
+
+const styles=StyleSheet.create({
+  opcionButton: {
+    backgroundColor: 'lightblue',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    marginHorizontal: 10,
+    borderRadius: 10,
+  }
+});
+
 
 export default Func;

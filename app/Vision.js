@@ -1,14 +1,14 @@
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import React, { useState } from 'react';
-import Boton from './boton';
 import Func from './Func';
 
 
 
-const Vision = () => {
-  
-  const { opciones,Eleccion_Jugador,Eleccion_Bot,winner} = Func("");
 
+const Vision = () => {
+
+  const { opciones,Eleccion_Jugador,Eleccion_Bot,winner, Elegir_PC,Boton} = Func("");
+  
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Piedra, Papel o Tijeras </Text>
